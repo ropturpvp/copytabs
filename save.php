@@ -1,5 +1,5 @@
 <?php
-include_once("../db2.php");
+include_once("../database.php");
 $status["status"]="";
 if(isset($_POST["data"]))
 {
