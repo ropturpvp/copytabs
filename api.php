@@ -13,4 +13,6 @@ $result=json_encode($select);
 {
     print($result);
 }
+echo getenv('DB_HOST');
+
 ?>
