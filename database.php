@@ -1,9 +1,7 @@
 <?php
-$app->get('/api.php', function() use($app) {
-  $app['monolog']->addDebug('logging output.');
-  return config(getenv('DB_HOST'), getenv('DB_NAME'), getenv('DB_USER'), getenv('DB_PASS'));
-});
-config($host, $dbName, $user, $password)
-  $DB = new PDO('mysql:host='.$host.';dbname='.$dbName.'', $user, $password);
-  return $DB;
+$host=getenv('DB_HOST');
+$dbName=getenv('DB_NAME');
+$user=getenv('DB_USER');
+$password=getenv('DB_PASS');
+$DB = new PDO('mysql:host='.$host.';dbname='.$dbName.'', $user, $password);
 ?>
