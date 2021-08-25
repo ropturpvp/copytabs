@@ -1,7 +1,7 @@
 <?php
-$host=DB_HOST;
-$dbName=DB_NAME;
-$user=DB_USER;
-$password=DB_PASS;
+$host=getenv('DB_HOST');
+$dbName=getenv('DB_NAME');
+$user=getenv('DB_USER');
+$password=getenv('DB_PASS');
 $DB = new PDO('mysql:host='.$host.';dbname='.$dbName.'', $user, $password);
 ?>
